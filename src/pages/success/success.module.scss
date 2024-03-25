@@ -1,5 +1,5 @@
 .successContainer {
-  height: 100vh;
+ 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,16 +16,9 @@
   }
   .kachow {
     margin-top: 2rem;
-    width: 50rem;
-    border-radius: 8px;
-    @media screen and (max-width: 1090px) {
-        width: 25rem;
-      }
-      @media screen and (max-width:  550px) {
-        width: 20rem;
-      }
+    width: 30%;
+    
     img {
-      border-radius: 8px;
       width: 100%;
     }
   }

@@ -11,7 +11,6 @@ export default function index() {
         <img src="/images/mcqueen-sally.png" alt="" />
       </div>
 
-     
     </div>
   );
 }
