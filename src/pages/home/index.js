@@ -38,14 +38,14 @@ export default function Home() {
   return (
     <div className={styles.homeContainer}>
       <div className={styles.title}>
-        <span> Benimle Date 'e Çıkar Mısın?</span>{" "}
-      </div>{" "}
+        <span> Benimle Date 'e Çıkar Mısın?</span>
+      </div>
       <div className={styles.simsek}>
         <img src="images/simsek.png" alt="" />
-      </div>{" "}
+      </div>
       <div className={styles.buttons}>
         <button className={styles.yes}>
-          {" "}
+          
           <a href="/success"> Evet </a>
         </button>
         <button
@@ -54,10 +54,10 @@ export default function Home() {
             position: "absolute",
           }}
         >
-          {" "}
-          Hayır{" "}
-        </button>{" "}
-      </div>{" "}
+          
+          Hayır
+        </button>
+      </div>
     </div>
   );
 }

@@ -1,39 +1,38 @@
 .homeContainer {
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: -webkit-fill-available;
+
+  overflow-x: hidden;
+  height: 100vh;
   .title {
     margin-top: 2rem;
 
     span {
-      font-size: 2rem;
-      
+      font-size: 1rem;
     }
   }
   .simsek {
-
     margin-top: 2rem;
-    width: 30%;
-    
+    width: 20rem;
+
     img {
       width: 100%;
     }
   }
   .buttons {
-   
     position: relative;
     margin-top: 2rem;
-    
+
     button {
       border: none;
       outline: none;
       margin: 2rem;
       font-size: 2rem;
-      padding: 0.5rem 2rem; 
-      
+      padding: 0.5rem 2rem;
+
       border-radius: 8px;
       cursor: pointer;
       color: #fff;
@@ -57,7 +56,16 @@
       cursor: default;
       top: 0;
       transition-duration: 0.5s;
-      
+    }
+  }
+  @media (max-width: 768px) {
+    .buttons {
+      flex-direction: column; /* Butonları dikey olarak düzenle */
+      align-items: center; /* Butonları ortala */
+
+      button {
+        margin: 1rem; /* Daha az kenar boşluğu */
+      }
     }
   }
 }
