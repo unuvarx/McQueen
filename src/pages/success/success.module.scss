@@ -1,0 +1,75 @@
+.successContainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .title {
+    margin-top: 2rem;
+
+    span {
+      font-size: 2rem;
+      @media screen and (max-width: 1090px) {
+        font-size: 2rem;
+      }
+    }
+  }
+  .kachow {
+    margin-top: 2rem;
+    width: 50rem;
+    border-radius: 8px;
+    @media screen and (max-width: 550px) {
+      width: -webkit-fill-available;
+    }
+    img {
+      border-radius: 8px;
+      width: 100%;
+    }
+  }
+}
+@keyframes changeColor {
+  0% {
+    color: #ff0000; /* Başlangıç rengi */
+  }
+  50% {
+    color: #ffff; /* Orta nokta rengi */
+  }
+  100% {
+    color: #ff00c3; /* Bitiş rengi */
+  }
+}
+
+.title span {
+  animation: changeColor 5s infinite; /* 5 saniyede bir tekrarlanan animasyon */
+}
+
+
+ 
+.hearts {
+    padding: 0rem 5rem;
+    width: -webkit-fill-available;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    img {
+      width: 2rem; // İstediğiniz boyutu belirleyin
+   
+    }
+  }
+@keyframes pulse {
+    0% {
+      width: 2rem;
+    }
+    50% {
+        width: 3rem;
+    }
+    100% {
+        width: 4rem;
+    }
+  }
+  
+  .hearts img {
+    animation: pulse 2s infinite; // pulse adlı animasyonu 2 saniyede bir sonsuz kez çalıştır
+  }
+  

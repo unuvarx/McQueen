@@ -1,0 +1,80 @@
+.homeContainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  .title {
+    margin-top: 2rem;
+
+    span {
+      font-size: 4rem;
+      @media screen and (max-width: 1090px) {
+        font-size: 2rem;
+      }
+    }
+  }
+  .simsek {
+    margin-top: 2rem;
+    width: 30rem;
+    @media screen and (max-width:  550px) {
+      width: -webkit-fill-available;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  .buttons {
+   
+    position: relative;
+    margin-top: 2rem;
+    
+    button {
+      border: none;
+      outline: none;
+      margin: 2rem;
+      font-size: 2rem;
+      padding: 0.5rem 2rem; 
+      
+      border-radius: 8px;
+      cursor: pointer;
+      color: #fff;
+      a {
+        color: red;
+        font-weight: bold;
+        text-decoration: none;
+      }
+    }
+    .yes {
+      background-color: #fff;
+    }
+    .yes:hover {
+      background-color: #b2b2b2;
+    }
+    .no {
+      position: absolute;
+      z-index: 9999999;
+      font-weight: bold;
+      background-color: red;
+      cursor: default;
+      top: 0;
+      transition-duration: 0.5s;
+      
+    }
+  }
+}
+@keyframes changeColor {
+  0% {
+    color: #ff0000; /* Başlangıç rengi */
+  }
+  50% {
+    color: #ffff; /* Orta nokta rengi */
+  }
+  100% {
+    color: #ff00c3; /* Bitiş rengi */
+  }
+}
+
+.title span {
+  animation: changeColor 5s infinite; /* 5 saniyede bir tekrarlanan animasyon */
+}
