@@ -18,9 +18,12 @@
     margin-top: 2rem;
     width: 50rem;
     border-radius: 8px;
-    @media screen and (max-width: 550px) {
-      width: -webkit-fill-available;
-    }
+    @media screen and (max-width: 1090px) {
+        width: 25rem;
+      }
+      @media screen and (max-width:  550px) {
+        width: 20rem;
+      }
     img {
       border-radius: 8px;
       width: 100%;
@@ -45,31 +48,3 @@
 
 
  
-.hearts {
-    padding: 0rem 5rem;
-    width: -webkit-fill-available;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  
-    img {
-      width: 2rem; // İstediğiniz boyutu belirleyin
-   
-    }
-  }
-@keyframes pulse {
-    0% {
-      width: 2rem;
-    }
-    50% {
-        width: 3rem;
-    }
-    100% {
-        width: 4rem;
-    }
-  }
-  
-  .hearts img {
-    animation: pulse 2s infinite; // pulse adlı animasyonu 2 saniyede bir sonsuz kez çalıştır
-  }
-  

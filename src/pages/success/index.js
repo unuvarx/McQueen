@@ -11,11 +11,7 @@ export default function index() {
         <img src="/images/mcqueen-sally.png" alt="" />
       </div>
 
-      <div className={styles.hearts}>
-        <img className={styles.heart} src="/images/heart.svg" alt="" />
-        <img className={styles.heart} src="/images/heart.svg" alt="" />
-        <img className={styles.heart} src="/images/heart.svg" alt="" />
-      </div>
+     
     </div>
   );
 }

@@ -17,8 +17,11 @@
   .simsek {
     margin-top: 2rem;
     width: 30rem;
+    @media screen and (max-width: 1090px) {
+      width: 25rem;
+    }
     @media screen and (max-width:  550px) {
-      width: -webkit-fill-available;
+      width: 20rem;
     }
     img {
       width: 100%;
