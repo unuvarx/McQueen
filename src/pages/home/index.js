@@ -3,9 +3,7 @@ import styles from "./home.module.scss";
 
 export default function Home() {
   useEffect(() => {
-    const handleMouseEnter = () => {
-      console.log("Selam");
-    };
+    
 
     const handleClick = () => {
       console.log("Selam");
@@ -21,8 +19,8 @@ export default function Home() {
       const newX = Math.floor(Math.random() * maxX);
       const newY = Math.floor(Math.random() * maxY);
 
-      nopButton.style.left = `${9 * newX}px`;
-      nopButton.style.top = `${9 * newY}px`;
+      nopButton.style.left = `${newX}px`;
+      nopButton.style.top = `${newY}px`;
     };
 
     const nopButton = document.querySelector(`.${styles.no}`);

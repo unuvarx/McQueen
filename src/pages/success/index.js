@@ -5,7 +5,7 @@ export default function index() {
   return (
     <div className={styles.successContainer}>
       <div className={styles.title}>
-        <span>KACHOOOOOWWWWWWW</span>
+        <span>KACHOOOWWWWW</span>
       </div>
       <div className={styles.kachow}>
         <img src="/images/mcqueen-sally.png" alt="" />

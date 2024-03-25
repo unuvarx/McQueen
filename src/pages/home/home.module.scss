@@ -1,41 +1,73 @@
 .homeContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   width: -webkit-fill-available;
-
-  overflow-x: hidden;
   height: 100vh;
+ 
   .title {
+    text-align: center;
     margin-top: 2rem;
-
+ 
+    width: 100%;
     span {
-      font-size: 1rem;
+      text-align: center;
+      font-size: 2rem;
+      @media screen and (max-width: 1090px) {
+        font-size: 2rem;
+      }
+      @media screen and (max-width: 600px) {
+        font-size: 1.4rem;
+      }
     }
   }
   .simsek {
+    display: flex;
+    justify-content: center;
+   
+    align-items: center;
+    width: 100%;
     margin-top: 2rem;
-    width: 20rem;
-
+ 
+   
     img {
-      width: 100%;
+      width: 30rem;
+      @media screen and (max-width: 1090px) {
+        width: 30rem;
+      }
+      @media screen and (max-width: 600px) {
+        width: 25rem;
+      }
+      @media screen and (max-width: 450px) {
+        width: 20rem;
+      }
+      @media screen and (max-width: 350px) {
+        width: 15rem;
+      }
+      @media screen and (max-width: 250px) {
+        width: 10rem;
+      }
     }
   }
   .buttons {
     position: relative;
     margin-top: 2rem;
-
+    display: flex;
+    justify-content: space-evenly;
+    
     button {
       border: none;
       outline: none;
-      margin: 2rem;
-      font-size: 2rem;
-      padding: 0.5rem 2rem;
-
+      margin: 0.5rem;
+      font-size: 1.4rem;
       border-radius: 8px;
       cursor: pointer;
       color: #fff;
+      @media screen and (max-width: 1090px) {
+        margin: 1rem;
+        
+      }
+      @media screen and (max-width: 600px) {
+        margin: 0.5rem;
+        
+      }
       a {
         color: red;
         font-weight: bold;
@@ -49,12 +81,12 @@
       background-color: #b2b2b2;
     }
     .no {
-      position: absolute;
-      z-index: 9999999;
+      margin-left: 10rem;
+      
       font-weight: bold;
       background-color: red;
       cursor: default;
-      top: 0;
+   
       transition-duration: 0.5s;
     }
   }

@@ -1,25 +1,46 @@
 .successContainer {
- 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: -webkit-fill-available;
+  height: 100vh;
 
   .title {
+    text-align: center;
     margin-top: 2rem;
-
+    width: 100%;
     span {
+      text-align: center;
       font-size: 2rem;
       @media screen and (max-width: 1090px) {
         font-size: 2rem;
       }
+      @media screen and (max-width: 600px) {
+        font-size: 1.4rem;
+      }
     }
   }
   .kachow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     margin-top: 2rem;
-    width: 30%;
-    
+
     img {
-      width: 100%;
+      width: 50rem;
+      @media screen and (max-width: 1090px) {
+        width: 30rem;
+      }
+      @media screen and (max-width: 600px) {
+        width: 25rem;
+      }
+      @media screen and (max-width: 450px) {
+        width: 20rem;
+      }
+      @media screen and (max-width: 350px) {
+        width: 15rem;
+      }
+      @media screen and (max-width: 250px) {
+        width: 10rem;
+      }
     }
   }
 }
@@ -38,6 +59,3 @@
 .title span {
   animation: changeColor 5s infinite; /* 5 saniyede bir tekrarlanan animasyon */
 }
-
-
- 
